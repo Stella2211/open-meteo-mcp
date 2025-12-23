@@ -2,6 +2,16 @@
 
 Privacy-focused Open-Meteo MCP server for weather forecasts.
 
+English | [日本語](README_ja.md)
+
+## Overview
+
+Most AI services provided by major providers use conversation content for training. Entering your home's latitude and longitude into these services raises privacy concerns.
+
+However, for convenience, we want to be able to instruct AI with commands like "Tell me the weather forecast for my home."
+
+This MCP server is designed to minimize the AI's exposure to location coordinates, thereby reducing privacy risks.
+
 ## Features
 
 - Get 7-day weather forecasts from Open-Meteo API
@@ -12,8 +22,14 @@ Privacy-focused Open-Meteo MCP server for weather forecasts.
 
 ## Installation
 
+Run directly from GitHub using npx or bunx:
+
 ```bash
-npx @stella2211/open-meteo-mcp
+# Using npx
+npx github:Stella2211/open-meteo-mcp
+
+# Using bunx
+bunx github:Stella2211/open-meteo-mcp
 ```
 
 ## Claude Desktop Configuration
@@ -28,11 +44,13 @@ Add to your Claude Desktop config file:
   "mcpServers": {
     "open-meteo": {
       "command": "npx",
-      "args": ["@stella2211/open-meteo-mcp"]
+      "args": ["-y", "github:Stella2211/open-meteo-mcp"]
     }
   }
 }
 ```
+
+> **Note**: The `-y` flag automatically confirms the installation prompt.
 
 ## Tools
 

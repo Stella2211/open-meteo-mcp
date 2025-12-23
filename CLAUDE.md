@@ -9,6 +9,15 @@ src/index.ts    - MCP server implementation
 dist/           - Built JavaScript output
 ```
 
+## Usage
+
+Run directly from GitHub:
+
+```bash
+npx github:Stella2211/open-meteo-mcp
+bunx github:Stella2211/open-meteo-mcp
+```
+
 ## Development
 
 Use Bun for development:
